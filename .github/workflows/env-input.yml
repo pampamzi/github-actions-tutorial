@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       enviro:
-      type: enviroment
+      type: environment
       required: true
       default: dev
 jobs:
