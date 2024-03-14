@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       color:
-      description: "choose color"
-      required: true
-      default: 'green'
+        description: "choose color"
+        required: true
+        default: 'green'
 
 jobs:
   deploy:
