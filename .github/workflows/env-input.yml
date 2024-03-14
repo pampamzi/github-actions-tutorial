@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       enviro:
-      type: environment
-      required: true
-      default: dev
+        type: environment
+        required: true
+        default: dev
 jobs:
   deploy:
     runs-on: ubuntu-latest
