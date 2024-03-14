@@ -1,0 +1,15 @@
+name: Workflow Dispatch Freeform Input Example
+
+on:
+  workflow_dispatch:
+    inputs:
+      color:
+      description: "choose color"
+      required: true
+      default: 'green'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ github.event.inputs.color }} color"
