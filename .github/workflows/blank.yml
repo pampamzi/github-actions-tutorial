@@ -13,8 +13,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-permissions:
-  issues: write
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -38,6 +37,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+  create_issues_job:
+    runs-on: ubuntu-latest
+    steps:
       - name: oction-create-issue
       # You may pin to the exact commit or the version.
       # uses: maxkomarychev/oction-create-issue@a5b6162a3aa4c1b429c87423d008d30a3c7a8a17
