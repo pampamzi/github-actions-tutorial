@@ -38,6 +38,8 @@ jobs:
           echo test, and deploy your project.
           
   create_issues_job:
+    permissions:
+      issues: write
     runs-on: ubuntu-latest
     steps:
       - name: oction-create-issue
